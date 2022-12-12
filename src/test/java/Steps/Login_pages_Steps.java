@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -72,11 +73,12 @@ public class Login_pages_Steps {
         FileUtils.copyFile(src, dest);
     }
 
-    @Given("user opened Browser using <url>")
-    public void userOpenedBrowserUsingUrl() {
 
+    @And("User Logout the Application")
+    public void userLogoutTheApplication() throws InterruptedException {
+        login.clickOnLogout_btn();
+        Thread.sleep(1000);
+
+        driver.switchTo().alert().accept();
     }
-
-
-
 }
