@@ -8,4 +8,4 @@ Feature: Check Guru99 Bank Login Functionality
     And User closed Browser
     Examples:
       | url                                    | userID       | pwd       |
-      | "https://demo.guru99.com/v3/index.php" | "mngr461859" | "mUnemEm" |
+      | "https://demo.guru99.com/v4/index.php" | mngr461887 | UmEgUru |

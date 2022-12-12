@@ -30,7 +30,7 @@ public class Login_pages_Steps {
 
 
     @When("^User enters valid UserID as (.*) and Password as (.*)$")
-    public void user_enters_valid_user_id_as_and_password_as(String userID, String pwd) {
+    public void user_enters_valid_user_id_as_and_password_as(String userID, String pwd) throws InterruptedException {
 
         login=new Login_Page(driver);
         login.enterUserID(userID);
@@ -42,7 +42,7 @@ public class Login_pages_Steps {
 
         login.clickOnLogin_btn();
         Thread.sleep(1000);
-        driver.switchTo().alert().accept();
+        //driver.switchTo().alert().accept();
 
     }
     @Then("User navigated to Guru99 Bank Home Page")
