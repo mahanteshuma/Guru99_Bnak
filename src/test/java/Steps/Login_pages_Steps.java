@@ -55,7 +55,7 @@ public class Login_pages_Steps {
             System.out.println("In Valid Page");
             takeScreenShot();
         }
-       Assert.assertTrue(true);
+      // Assert.assertTrue(true);
 
     }
 
